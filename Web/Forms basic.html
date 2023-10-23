@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>forms</title>
+</head>
+<body>
+
+	<form action="float.html" method="post">
+	<fieldset>
+		<legend>Personal details</legend>
+	<label for="fname">Enter your first name:</label><br>
+	<input type="text" name="fname" id="fname" placeholder="Enter a name" required><br><br><br>
+	
+	<label for="lname">Enter your last name:</label><br>
+	<input type="text" name="lname" id="lname"><br><br><br>
+	
+	<label>Select Gender</label><br>
+	<input type="radio" name="gender" id="male" checked>
+	<label for ="male">Male</label><br>
+	<input type="radio" name="gender" id="female" >
+	<label for ="female">female</label><br>
+	<input type="radio" name="gender" id="other">
+	<label for ="other">Other</label><br><br><br>
+	
+	<label>How do you travel?</label><br>
+	<input type="checkbox" name="mode1" id="road">
+	<label for="road"> I travel by road</label><br>
+	<input type="checkbox" name="mode2" id="water">
+	<label for="water"> I travel by boat</label><br>
+	<input type="checkbox" name="mode3" id="air" checked>
+	<label for="air"> I travel by plane</label><br><br><br>
+	</fieldset>
+	
+	<label for="mycolor">Select color</label><br>
+	<input type="color" id="mycolor" name="mazacolor"><br><br><br>
+	
+	<label for="dob"> Date of Birth</label><br>
+	<input type="date" id="dob" name="mazadob" min="2021-02-08"><br><br><br>
+	
+	<label for="mydatetime">Select date and time</label><br>
+	<input type="datetime-local" id="mydatetime" name="mazadatetime"><br><br><br>
+	
+	<label for="myemail">Enter email id</label><br>
+	<input type="email" id="myemail" name="mazaemail" required><br><br><br>
+	
+	<label for="myupload">Upload your document</label><br>
+	<input type="file" id="myupload"><br><br><br>
+	
+	<label for="mymonth"> Select month</label><br>
+	<input type="month" id="mymonth"><br><br><br>
+	
+	<label for="myweek"> Select week</label><br>
+	<input type="week" id="myweek"><br><br><br>
+	
+	<label for="mynum">Enter age</label><br>
+	<input type="number" id="mynum" min="18" max="25"><br><br><br>
+	
+	<label for="mypass">Enter passowrd</label><br>
+	<input type="password" id="mypass"><br><br><br>
+	
+	<label for="myurl"> Enter url</label><br>
+	<input type="url" id="myurl"><br><br><br>
+	
+	<label for="mytel"> Enter phone number</label><br>
+	<input type="tel" id="mytel" pattern="[0-8]{3}"><br><br><br>
+	
+	<label for="myslider">Volume</label><br>
+	<input type="range" id="myslider" min="0" max="10" step="2"><br><br><br>
+	
+	<label for="mysearch"> Search here</label><br>
+	<input type="search" id="mysearch"><br><br><br>
+	
+	<input type="image" src="beach.jpg" height="40px" width="40px" alt="Submit"><br>
+	
+	<label for="mydrop">Choose mode of transport</label><br>
+	<select id="mydrop" name="transport" size="2" multiple>
+	<option value="road">Road ways</option>
+	<option value="water">Water</option>
+	<option value="air">Air</option>
+	<option value="rail" selected>Railways</option>
+	</select><br><br><br>
+	
+	<label>Enter places</label><br>
+	<input list="places">
+	<datalist id="places">
+		<option value="Borivali">
+		<option value="Kandivali">
+		<option value="Malad">
+	</datalist><br><br><br>
+	
+	<label> Enter Comments</label><br>
+	<textarea name="comments" rows="7" cols="50">Write Comments here
+	</textarea> <br><br><br>
+	
+	<input type="button" value="this is button"><br><br><br>
+	<button type="button">This is extra button</button><br><br><br>
+	<input type="submit" value="click here"><br><br><br>	
+	<input type="reset"><br><br><br>
+	</form>
+
+</body>
+</html>

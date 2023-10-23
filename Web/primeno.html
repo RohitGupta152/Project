@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical</title>
+    <style>
+ h2{
+           text-align: center;
+            font-style: italic;
+        }
+        form{    
+             padding: 5%;
+             margin: 5%;
+             margin-bottom:auto;
+             margin-top: auto;
+             float: left;
+            }
+            #mynum 
+            {
+              width: 200px;
+              margin: 20PX auto;
+              padding: 30px;
+              border-radius: 100px;
+            }
+            #button{
+                background-color: rgb(28, 235, 73);
+                color: rgb(207, 25, 25);
+              width: auto;
+              margin: 20PX auto;
+              padding: 15px;
+              border-radius: 100px; 
+            }
+    </style>
+</head>
+<body style="background-color: blueviolet;">
+   
+<h2> THIS IS PRACTICAL 9</h2>
+<form action="">
+    <input type="text" id="mynum" placeholder="Enter the number" required> <br>
+    <input type="button" id="button" onclick="myprimefunc()" value="Submit">
+</form>
+    <script>
+        function myprimefunc()
+        {
+            var num= document.getElementById("mynum").value;
+           
+            var remainder=0;
+            for( let i=2;i<num;i++)
+            {
+                if(num%2==0)
+                {
+                remainder++;
+                break;
+                }
+            }
+
+        
+        if(remainder==0)
+        {
+            alert(num + " "  + "is a prime number" ) ;
+        }
+        else if(remainder!=0)
+        {
+            alert (num + " " + "is not a Prime Number");
+        }
+    }
+    </script>
+</body>
+</html>
